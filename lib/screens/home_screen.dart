@@ -5,16 +5,7 @@ import 'package:noteskeeper/providers/note_provider.dart';
 import 'package:noteskeeper/widgets/note_card.dart';
 import 'package:provider/provider.dart';
 import 'package:intl/intl.dart';
-import 'package:noteskeeper/widgets/note_card.dart';
-import 'package:provider/provider.dart';
-import 'package:intl/intl.dart';
-
-
-// ... (all previous imports)
-import 'package:noteskeeper/widgets/note_card.dart';
-import 'package:provider/provider.dart';
-import 'package:intl/intl.dart';
-import 'package:flutter/widgets.dart'; // Added this import for TextPainter
+import 'package:flutter/widgets.dart'; 
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -79,7 +70,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
     showMenu<NoteSortOrder>(
       context: context,
-      // Adjust the horizontal position (left) to align with the arrow_drop_down icon
       position: RelativeRect.fromLTRB(
         offset.dx + textPainter.size.width + 4, // Aligns menu with the arrow icon
         offset.dy + size.height, // Place menu directly below the widget
